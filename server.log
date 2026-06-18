@@ -1,3 +1,0 @@
-[2025-12-22 19:24:56] [DB] Opened database successfully
-terminate called after throwing an instance of 'boost::wrapexcept<boost::system::system_error>'
-  what():  bind: Address already in use [system:98 at /usr/include/boost/asio/detail/reactive_socket_service.hpp:161 in function 'bind']
