@@ -1,0 +1,5 @@
+/home/shiv/HTTPserver/CMakeFiles/server.dir
+/home/shiv/HTTPserver/CMakeFiles/edit_cache.dir
+/home/shiv/HTTPserver/CMakeFiles/rebuild_cache.dir
+/home/shiv/HTTPserver/_deps/json-build/CMakeFiles/edit_cache.dir
+/home/shiv/HTTPserver/_deps/json-build/CMakeFiles/rebuild_cache.dir

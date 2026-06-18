@@ -1,0 +1,78 @@
+# Prerequisites
+*.d
+
+# Compiled Object files
+*.slo
+*.lo
+*.o
+*.obj
+
+# Precompiled Headers
+*.gch
+*.pch
+
+# Compiled Dynamic libraries
+*.so
+*.dylib
+*.dll
+
+# Fortran module files
+*.mod
+*.smod
+
+# Compiled Static libraries
+*.lai
+*.la
+*.a
+*.lib
+
+# Executables
+*.exe
+*.out
+*.app
+/server
+
+# CMake artifacts
+CMakeCache.txt
+CMakeFiles/
+CMakeScripts/
+Testing/
+Makefile
+cmake_install.cmake
+install_manifest.txt
+compile_commands.json
+CTestTestfile.cmake
+_deps/
+build/
+bin/
+lib/
+
+# SQLite Databases
+*.db
+*.db-shm
+*.db-wal
+*.sqlite
+*.sqlite3
+
+# SSL Certificates (Never commit these!)
+*.crt
+*.key
+*.pem
+
+# Logs
+*.log
+
+# Frontend/Node
+node_modules/
+npm-debug.log
+yarn-error.log
+dist/
+build/
+
+# IDE / OS
+.vscode/
+.idea/
+*.swp
+*~
+.DS_Store
+Thumbs.db

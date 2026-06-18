@@ -1,0 +1,140 @@
+:root {
+  --bg-color: #0f172a;
+  --panel-bg: rgba(30, 41, 59, 0.7);
+  --accent-color: #38bdf8;
+  --text-main: #f1f5f9;
+  --text-muted: #94a3b8;
+}
+
+body {
+  margin: 0;
+  background-color: var(--bg-color);
+  color: var(--text-main);
+  font-family: 'Inter', sans-serif;
+}
+
+.chat-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.glass-panel {
+  background: var(--panel-bg);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+}
+
+.header {
+  padding: 20px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.messages-list {
+  flex-grow: 1;
+  overflow-y: auto;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* msg item removed, replaced by specific bubbles */
+.message-bubble {
+  max-width: 70%;
+  padding: 0.8rem 1rem;
+  border-radius: 12px;
+  position: relative;
+  word-wrap: break-word;
+  animation: slideIn 0.3s ease;
+}
+
+.message-mine {
+  align-self: flex-end;
+  background: var(--accent-color);
+  color: #0f172a;
+  border-bottom-right-radius: 2px;
+}
+
+.message-other {
+  align-self: flex-start;
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+  border-bottom-left-radius: 2px;
+}
+
+.msg-sender {
+  font-size: 0.75rem;
+  font-weight: bold;
+  opacity: 0.8;
+  margin-bottom: 0.2rem;
+  display: block;
+}
+
+.msg-content {
+  font-size: 1rem;
+  display: block;
+}
+
+.msg-time {
+  display: block;
+  font-size: 0.65rem;
+  opacity: 0.7;
+  margin-top: 0.2rem;
+  text-align: right;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.input-area {
+  padding: 20px;
+  display: flex;
+  gap: 12px;
+}
+
+input {
+  flex-grow: 1;
+  background: rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 8px;
+  padding: 12px;
+  color: white;
+  outline: none;
+}
+
+input:focus {
+  border-color: var(--accent-color);
+}
+
+button {
+  background: var(--accent-color);
+  color: #0f172a;
+  border: none;
+  padding: 0 24px;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.1s;
+}
+
+button:active {
+  transform: scale(0.95);
+}
